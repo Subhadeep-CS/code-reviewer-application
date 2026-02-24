@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const LeftSection = () => {
   return (
     <div className="w-1/2 flex flex-col gap-8">
@@ -9,6 +11,18 @@ const LeftSection = () => {
         instantly understand why it’s built this way — performance, patterns,
         and pitfalls.
       </h3>
+      <div className="w-full">
+        <Link
+          className="inline-block px-6 py-3 rounded-full font-medium text-white
+  bg-gradient-to-r from-indigo-500 to-blue-500
+  hover:from-indigo-600 hover:to-blue-600
+  shadow-md hover:shadow-xl transform hover:rotate-10
+  transition-all"
+          href={"/explain"}
+        >
+          Try it now
+        </Link>
+      </div>
     </div>
   );
 };
